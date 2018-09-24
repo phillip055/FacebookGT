@@ -1,0 +1,38 @@
+body, section {			/* Change width and height to own preferences */
+	width: 600px;
+	height: 400px;
+	overflow-x: hidden;
+	margin-top: 10px;
+}
+
+#list-group-div {
+	margin-top: 10px;
+}
+
+.container {
+	margin-top: 10px;;
+}
+
+#add-member-btn {
+	float: right;
+}
+
+h1 {
+	text-align: center;
+}
+
+#new-group-btn {
+	margin-left: 32px;
+}
+.form-row {
+	margin-bottom: 5px;
+}
+
+/* Basic style tweaks */
+section { padding: 5px;}
+.navbar { margin-bottom: 2px; }
+
+/* Scroll Bar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: "#008cba"; }

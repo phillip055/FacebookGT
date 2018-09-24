@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook GT",
+  "description": "Tag your friends - the lazy way",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "*://*.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*"
+      ],
+      "js": ["js/bootstrap/jquery.min.js", "js/helpers.js", "js/service.js", "js/content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

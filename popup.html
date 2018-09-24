@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/popup.css" rel="stylesheet" media="screen">
+    <script src="js/bootstrap/jquery.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="page1">
+        <div class="row">
+          <div class="col-8">
+            <h3>Your Groups</h3>
+          </div>
+          <div class="col-4">
+            <button id = "new-group-btn" class="btn btn-outline-primary" data-toggle="modal" data-target="#newGroupModal">Add group</button>
+          </div>
+        </div>
+        <div id="list-group-div">
+          <ul class="list-group">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="newGroupModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Group</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="group-name">Name</label>
+              <input class="form-control" id="group-name" placeholder="Enter Group Name">
+            </div>
+            <label for="members">Friends</label>
+            <label for="members" id="add-member-btn"><button type="button" class="close"><span aria-hidden="true">&plus;</span></button></label>
+            <div id="members">
+              <div class="form-row" id="member">
+                <div class="col">
+                  <input type="text" class="form-control member-name" placeholder="Name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control member-id" placeholder="ID">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="create-group-btn" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
